@@ -17,13 +17,13 @@
 
                 <!-- balance ammount -->
                   
-                    <div class="flex items-center justify-between px-4 py-4 rounded-xl text-white bg-base-100 w-80 shadow-2xl">
+                    <div class="flex items-center justify-between px-4 py-4 rounded-xl text-base-1000 bg-base-100 w-80 shadow-2xl">
                         <div>
-                            <h2 class="font-bold">9200</h2>
+                            <h2 id="current-balance" class="font-bold">9200</h2>
                             <span>Available Balance</span>
                         </div>
                         <div class="">
-                            <button id="logout-btn" class="btn btn-sm border-white text-white"><i class="fa-light fa-arrow-left-from-bracket"></i> Logout</button>
+                            <button id="logout-btn" class="btn btn-sm bg-rose-500 hover:bg-rose-600 text-white"><i class="fa-light fa-arrow-left-from-bracket"></i> Logout</button>
                         </div>
                     </div>
                     <div class="divider"></div>
@@ -41,16 +41,16 @@
                                 <label class="label">
                                   <span class="label-text">Ammount</span>
                                 </label>
-                                <input id="phone-number" type="text" placeholder="Ammout" class="input input-bordered" required />
+                                <input id="add-money" type="text" placeholder="Ammout" class="input input-bordered" required />
                               </div>
                               <div class="form-control">
                                 <label class="label">
                                   <span class="label-text">Pin</span>
                                 </label>
-                                <input id="pin-number" type="password" placeholder="Your Pin" class="input input-bordered" autocomplete="off" required />
+                                <input id="pin-input" type="password" placeholder="Your Pin" class="input input-bordered" autocomplete="off" required />
                               </div>
                               <div class="form-control mt-6">
-                                <button id="login-btn" class="btn btn-secondary font-bold text-gray-200">Login</button>
+                                <button id="add-moey-btn" class="btn btn-secondary font-bold text-gray-200">Add Money</button>
                               </div>
                             </form>
                           </div>
