@@ -10,7 +10,7 @@ document.getElementById('login-btn')
     // check the phone number validate.
     if(phoneNumber === '01628745520' && pinNumber === '8212'){
       console.log('your age logged in');
-      window.location.href = '/home.html'
+      window.location.href = './home.html'
     }
     else{
       alert('Wrong number or pin');

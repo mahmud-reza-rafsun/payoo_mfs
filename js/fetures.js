@@ -1,6 +1,6 @@
 // logout events
 document.getElementById('logout-btn').addEventListener('click', function(){
-    window.location.href = '/login.html';
+    window.location.href = './index.html';
 })
 
 // remove or hide --> add money button
