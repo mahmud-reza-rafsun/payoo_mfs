@@ -29,14 +29,14 @@
                     <div class="divider"></div>
                     <!-- user action button -->
                     <div class="flex gap-12">
-                        <button class="btn btn-lg ">Add Money</button>
-                        <button class="btn btn-lg">Cash Out</button>
+                        <button id="add-money-button" class="btn btn-lg">Add Money</button>
+                        <button id="cash-out-button" class="btn btn-lg">Cash Out</button>
                     </div>
                     <div class="divider"></div>
-                    <!-- add mone start -->
-                        <div class="hero-content flex-col">
+                    <!-- add money start -->
+                        <div id="show-add-money" class="hero-content flex-col">
                           <div class="card bg-base-100 w-80 max-w-sm shadow-2xl">
-                            <form class="card-body">
+                            <form class="px-4 py-3">
                               <div class="form-control">
                                 <label class="label">
                                   <span class="label-text">Ammount</span>
@@ -55,7 +55,41 @@
                             </form>
                           </div>
                         </div>
-                    <!-- add mone end -->
+                    <!-- add money end -->
+
+                    <!-- cash out start -->
+                    <div id="show-cash-out" class="hidden hero-content flex-col">
+                      <div class="card bg-base-100 w-80 max-w-sm shadow-2xl">
+                        <form class="px-4 py-3">
+                          <div class="flex gap-4">
+                            <div class="form-control">
+                              <label class="label">
+                                <span class="label-text">Ammount</span>
+                              </label>
+                              <input id="cash-out" type="text" placeholder="Ammout" class="input input-bordered w-28" required />
+                            </div>
+  
+                            <div class="form-control">
+                              <label class="label">
+                                <span class="label-text">Bank Account No.</span>
+                              </label>
+                              <input id="bank-account" type="text" placeholder="Bank Account No." class="input input-bordered w-40" required />
+                            </div>
+                          </div>
+
+                          <div class="form-control">
+                            <label class="label">
+                              <span class="label-text">Pin</span>
+                            </label>
+                            <input id="cash-out-pin" type="password" placeholder="Your Pin" class="input input-bordered" autocomplete="off" required />
+                          </div>
+                          <div class="form-control mt-6">
+                            <button id="cash-out-btn" class="btn btn-secondary font-bold text-gray-200">Cash Out</button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                <!-- cash out end -->
               </div>
             </div>
           </div>
