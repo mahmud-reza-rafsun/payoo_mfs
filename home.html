@@ -19,7 +19,10 @@
                   
                     <div class="flex items-center justify-between px-4 py-4 rounded-xl text-base-1000 bg-base-100 w-80 shadow-2xl">
                         <div>
-                            <h2 id="current-balance" class="font-bold">9200</h2>
+                            <div class="flex items-center justify-start gap-1">
+                              <i class="fa-solid fa-bangladeshi-taka-sign -mt-1"></i>
+                              <h2 id="current-balance" class="font-bold">9500</h2>
+                            </div>
                             <span>Available Balance</span>
                         </div>
                         <div class="">
@@ -37,20 +40,50 @@
                         <div id="show-add-money" class="hero-content flex-col">
                           <div class="card bg-base-100 w-80 max-w-sm shadow-2xl">
                             <form class="px-4 py-3">
-                              <div class="form-control">
-                                <label class="label">
-                                  <span class="label-text">Ammount</span>
-                                </label>
-                                <input id="add-money" type="text" placeholder="Ammout" class="input input-bordered" required />
+
+                              <div class="flex justify-between gap-3">
+                                <div class="form-control">
+                                  <label class="label">
+                                    <span class="label-text">Ammount</span>
+                                  </label>
+                                  <input id="add-money" type="text" placeholder="Ammout" class="input input-bordered w-28" required />
+                                </div>
+
+                                <div class="form-control">
+                                  <label class="label">
+                                    <span class="label-text">Select Bank</span>
+                                  </label>
+                                  
+                                  <select class="select select-bordered w-full max-w-xs">
+                                    <option disabled selected>Select Bank</option>
+                                    <option>Islami Bank PLC</option>
+                                    <option>EXIM Bank PLC</option>
+                                    <option>AL-Arafah Bank PLC</option>
+                                    <option>Union Bank PLC</option>
+                                  </select>
+
+                                </div>
                               </div>
-                              <div class="form-control">
-                                <label class="label">
-                                  <span class="label-text">Pin</span>
-                                </label>
-                                <input id="pin-input" type="password" placeholder="Your Pin" class="input input-bordered" autocomplete="off" required />
+
+                              <div class="flex justify-between gap-3 mt-6">
+
+                                <div class="form-control">
+                                  <label class="label">
+                                    <span class="label-text">Bank Account No.</span>
+                                  </label>
+                                  <input id="bank-account-no" type="text" placeholder="Bank Account No." class="input input-bordered w-40" autocomplete="off" required />
+                                </div>
+
+                                <div class="form-control">
+                                  <label class="label">
+                                    <span class="label-text">Pin</span>
+                                  </label>
+                                  <input id="pin-input" type="password" placeholder="Your Pin" class="input input-bordered w-28" autocomplete="off" required />
+                                </div>
                               </div>
+
                               <div class="form-control mt-6">
-                                <button id="add-moey-btn" class="btn btn-secondary font-bold text-gray-200">Add Money</button>
+                                <button id="add-moey-btn" class="btn btn-accent font-bold text-gray-200">Add Money</button>
                               </div>
                             </form>
                           </div>
@@ -77,11 +110,20 @@
                             </div>
                           </div>
 
-                          <div class="form-control">
-                            <label class="label">
-                              <span class="label-text">Pin</span>
-                            </label>
-                            <input id="cash-out-pin" type="password" placeholder="Your Pin" class="input input-bordered" autocomplete="off" required />
+                          <div class="flex justify-between gap-3">
+                            <div class="form-control">
+                              <label class="label">
+                                <span class="label-text">Request TrxID</span>
+                              </label>
+                              <input id="trx-id" type="text" placeholder="Request TrxID" class="input input-bordered w-full" autocomplete="off" required />
+                            </div>
+
+                            <div class="form-control">
+                              <label class="label">
+                                <span class="label-text">Pin</span>
+                              </label>
+                              <input id="cash-out-pin" type="password" placeholder="Your Pin" class="input input-bordered w-32" autocomplete="off" required />
+                            </div>
                           </div>
                           <div class="form-control mt-6">
                             <button id="cash-out-btn" class="btn btn-secondary font-bold text-gray-200">Cash Out</button>
@@ -94,6 +136,8 @@
             </div>
           </div>
     </main>
-    <script src="./js/home.js"></script>
+    <script src="./js/fetures.js"></script>
+    <script src="./js/addMoney.js"></script>
+    <script src="./js/cashOutMoney.js"></script>
 </body>
 </html>
