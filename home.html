@@ -13,7 +13,7 @@
         <div class="mockup-phone border-primary">
             <div class="camera"></div>
             <div class="display">
-              <div class="artboard artboard-demo phone-2">
+              <div class="artboard artboard-demo phone-3">
 
                 <!-- balance ammount -->
                   
@@ -49,13 +49,18 @@
                     </div>
                     <div class="divider"></div>
                     <!-- user action button -->
-                    <div class="flex gap-3">
+                    <div class="flex flex-wrap justify-center gap-3">
                         <button id="add-money-button" class="btn btn-lg bg-green-500 text-white hover:bg-green-600"><i class="fa-light fa-money-bill-1-wave"></i> Add Money</button>
+
                         <button id="cash-out-button" class="btn btn-lg bg-orange-600 text-white hover:bg-orange-700"><i class="fa-light fa-money-bill-transfer"></i> Cash Out</button>
+
+                        <button id="trans-button" class="btn btn-lg bg-amber-500 text-white hover:bg-amber-700"><i class="fa-light fa-messages-dollar"></i> Transaction</button>
+
+                        <button id="" class="btn btn-lg bg-emerald-500 text-white hover:bg-emerald-700"><i class="fa-light fa-address-book"></i> Contact</button>
                     </div>
                     <div class="divider"></div>
                     <!-- add money start -->
-                        <div id="show-add-money" class="hero-content flex-col">
+                        <div id="show-add-money" class="hidden hero-content flex-col">
                           <div class="card bg-base-100 w-80 max-w-sm shadow-2xl">
                             <form class="px-4 py-3">
 
@@ -79,7 +84,6 @@
                                     <option>AL-Arafah Bank PLC</option>
                                     <option>Union Bank PLC</option>
                                   </select>
-
                                 </div>
                               </div>
 
@@ -109,7 +113,7 @@
                     <!-- add money end -->
 
                     <!-- cash out start -->
-                    <div id="show-cash-out" class="hidden hero-content flex-col">
+                    <div id="show-cash-out" class="hero-content flex-col">
                       <div class="card bg-base-100 w-80 max-w-sm shadow-2xl">
                         <form class="px-4 py-3">
                           <div class="flex gap-4">
@@ -150,12 +154,18 @@
                       </div>
                     </div>
                 <!-- cash out end -->
+                 <!-- transaction start -->
+                  <div id="show-trans-history">
+                    <h2 class="text-5xl">Transaction</h2>
+                  </div>
+                 <!-- transaction end -->
               </div>
             </div>
           </div>
     </main>
-    <script src="./js/fetures.js"></script>
+    <script src="./js/utilities.js"></script>
     <script src="./js/addMoney.js"></script>
-    <script src="./js/cashOutMoney.js"></script>
+    <script src="./js/cash-out.js"></script>
+    <script src="./js/fetures.js"></script>
 </body>
 </html>
